@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku - Play a Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles/sudoku.css" type="text/css">
+    <link rel="stylesheet" href="styles/user-input.css">
+    <link rel="stylesheet" href="styles/error.css">
+   
+    <!-- link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" -->
+    <!-- reference your source code here -->
+</head>
+<body>
+    <main>
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="images/logo.gif" width="112" height="28">
+                <a class="navbar-item">
+                  Sudoku Center
+                </a>
+              </a>
+              
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div class="navbar-menu" id="burger">
+              <div class="navbar-start">
+                <a class="navbar-item" href="sudoku.html">
+                  Play Game
+                </a>
+                <a class="navbar-item" href="high_scores.html">
+                  High Scores
+                </a>
+              </div>
+            </div>
+
+          </nav>
+        <br>
+        <br>
+        <table id="board"></table>
+        <br>
+        <table id="palette"></table>
+    </main>
+</body>
+<script src="scripts/sudoku.js"></script>
+</html>

@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+#scores {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 70px 2px;
+
+
+}
+
+#sheader{
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+
+#scores th{
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+#scores td{
+    font-weight: normal;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+

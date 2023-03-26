@@ -1,0 +1,214 @@
+<table id="board">
+            <tr id="row1">
+                <td></td>
+                <td>1</td>
+                <td></td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td>9</td>
+                <td></td>
+
+
+            </tr>
+            <tr id="row2">
+                <td></td>
+                <td></td>
+                <td>4</td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td>2</td>
+                <td></td>
+                <td></td>
+
+
+            </tr>
+            <tr id="row3">
+                <td></td>
+                <td></td>
+                <td>8</td>
+                 
+                <td></td>
+                <td></td>
+                <td>5</td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+
+
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr id="row4">
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td>3</td>
+                <td></td>
+
+
+            </tr>
+            <tr id="row5">
+                <td>2</td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td>4</td>
+                <td></td>
+                 
+                <td>1</td>
+                <td></td>
+                <td></td>
+
+
+            </tr>
+            <tr id="row6">
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+
+
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr id="row7">
+                <td></td>
+                <td></td>
+                <td>1</td>
+                 
+                <td>8</td>
+                <td></td>
+                <td></td>
+                 
+                <td>6</td>
+                <td></td>
+                <td></td>
+
+
+            </tr>
+            <tr id="row8">
+                <td></td>
+                <td>3</td>
+                <td></td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td>8</td>
+                <td></td>
+
+
+            </tr>
+            <tr id="row9">
+                <td></td>
+                <td></td>
+                <td>6</td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+                 
+                <td></td>
+                <td></td>
+                <td></td>
+
+
+            </tr>
+        </table>
+
+
+
+function buildHead(table){
+    let thead = table.createTHead();
+    let row = thead.insertRow();
+}
+
+function buildTable(table){
+
+    //row data
+    /*
+    let stock = [
+        (-1,1,-1,-1,-1,-1,-1,9,-1)
+        (-1,-1,4,-1,-1,-1,2,-1,-1)
+        (-1,-1,8,-1,-1,5,-1,-1,-1)
+        (-1,1,-1,-1,-1,-1,-1,3,-1)
+        (2,-1,-1,-1,4,-1,1,-1,-1)
+        (-1,-1,-1,-1,-1,-1,-1,-1,-1)
+        (-1,-1,1,8,-1,-1,6,-1,-1)
+        (-1,3,-1,-1,-1,-1,-1,8,-1)
+        (-1,-1,6,-1,-1,-1,-1,-1,-1)
+    ];
+    */
+    
+    stock[0] = new Array(-1,1,-1,-1,-1,-1,-1,9,-1)
+    stock[1] = new Array(-1,-1,4,-1,-1,-1,2,-1,-1)
+    stock[2] = new Array(-1,-1,8,-1,-1,5,-1,-1,-1)
+    stock[3] = new Array(-1,1,-1,-1,-1,-1,-1,3,-1)
+    stock[4] = new Array(2,-1,-1,-1,4,-1,1,-1,-1)
+    stock[5] = new Array(-1,-1,-1,-1,-1,-1,-1,-1,-1)
+    stock[6] = new Array(-1,-1,1,8,-1,-1,6,-1,-1)
+    stock[7] = new Array(-1,3,-1,-1,-1,-1,-1,8,-1)
+    stock[8] = new Array(-1,-1,6,-1,-1,-1,-1,-1,-1)
+    //rows
+    for (i = 0; i < stock.length; i++) {
+        let row = table.insertRow();
+        for (j = 0; j < stock[i].length; j++) {
+            let cell = row.insertCell();
+            let text = document.createTextNode(stock[i]);
+            cell.appendChild(text);
+        }
+    }
+
+    let board = document.getElementById("board");
+    buildTable(board);
+}
+
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="images/logo.gif" width="112" height="28">
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <a class="navbar-item" href="test.html">
+            Sudoku Center
+          </a>
+          <a class="navbar-item" href="sudoku.html">
+            Play Game
+          </a>
+          <a class="navbar-item" href="high_scores.html">
+            High Scores
+          </a>
+        </div>
+      </nav>

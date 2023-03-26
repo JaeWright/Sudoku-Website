@@ -1,0 +1,6 @@
+.user-input { 
+    background-color: #f2f2f2;
+}
+td:active{
+    background-color: black;
+}
